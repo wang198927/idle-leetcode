@@ -5,7 +5,7 @@ import java.util.Map;
 public class TwoSum {
 
     public int[] twoSum(int[] numbers, int target){
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0 ; i<numbers.length;i+=1){
             int difference = target - numbers[i];
             if(map.containsKey(difference)){
